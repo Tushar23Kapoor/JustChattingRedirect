@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch Redirect</title>
+  <script>
+    window.onload = function () {
+      const hash = window.location.hash;
+      const customScheme = "com.potterapple.justchatting://auth" + hash;
+      window.location.href = customScheme;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting back to the JustChatting app...</p>
+</body>
+</html>
